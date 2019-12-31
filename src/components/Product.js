@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import cartLogo from "../cartLogo.svg";
 import {ProductConsumer} from "../context";
+import PropTypes from 'prop-types';
 
 
 export default class Product extends Component {
@@ -35,6 +36,16 @@ export default class Product extends Component {
         )
     }
 }
+
+// Product.propTypes={
+//     product:PropTypes.shape({
+//         ind:PropTypes.number,
+//         img:PropTypes.string,
+//         title:PropTypes.string,
+//         price:PropTypes.number,
+//         inCart:PropTypes.bool
+//     })
+// }
 
 const ProductWrapper= styled.div`
 .card{

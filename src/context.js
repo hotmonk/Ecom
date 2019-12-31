@@ -13,9 +13,17 @@ export default class ProductProvider extends Component {
         handleDetail=()=>{
             console.log('hello from detail');
         }
-        addToCart=()=>{
-            console.log("Hello from add to cart")
+        addToCart=(id)=>{
+            console.log(`hello from add to cart.id is ${id}`)
         }
+
+        // tester=()=>{
+        //     console.log('State products', this.state.products[0].incart);
+        //     console.log('Data products :', this.state.products[0].incart);
+
+        //     const tempProducts = [..this.state.products];
+        //     tempProducts[0].incart=true;
+        // }
     render() {
         return (
             <ProductContext.Provider value={{
